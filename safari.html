@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>china</title>
+    <link rel="stylesheet" href="style/style.css" href="style/bootstrap.css">
+    <script src="#"></script>
+
+</style>
+ 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container row menu">
+                <a href="" class="menu__logo"><img src="img/4g travel-logos_black.png" alt=""></a>
+                <ul class="menu__list">
+                    <li><a href="index.html" class="menu__link">home</a></li>
+                    <li><a href="photos.html" class="menu__link">photos</a></li>
+                    <li><a href="posts.html" class="menu__link">posts</a></li>
+                    <li><a href="login.html" class="menu__link">login</a></li>
+                    <li><a href="contacts.html" class="menu__link">contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+   
+    </header>
+ <img class="mySlides" src="img/s1.jpg" style="width:100%">
+  <img class="mySlides" src="img/s2.jpg" style="width:100%">
+  <img class="mySlides" src="img/s3.jpg" style="width:100%">
+  <img class="mySlides" src="img/s4.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+ <main>
+        <div class="container">
+           
+            <div class="row content">
+                <section class="content__info">
+                    <h1 class="content__title">SAFARI TRAVEL GUIDE</h1>
+                    <h4 class="content__title">What is an African Safari?</h4>
+                    <p class="content__text">It is a journey in Africa that involves spending some time in the bush watching wild animals. So, basically, a safari is any trip into the wilderness to see wildlife. That's quite a narrow definition though. One that has evolved and expanded over the years to mean more than it once did. </p>
+                    
+                    <p class="content__text">Now an 'African safari' can be an adventure tour that spends some time in nature looking at animals and birds. Calling an urban or cultural tour in Africa a safari would still be inaccurate. But, referring to a marine boat tour as an 'ocean safari' is acceptable (to marketers at the least). First, let's take a look at the traditional Africa safari and how it has evolved...</p>
+                    <p class="content__title">What African Safaris are about:</p>
+                        <p class="content__text">In addition to game viewing and wildlife tracking, safaris are about:</p>
+                        <ul>
+                            <li>experiencing the local cultures of Africa</li>
+                            <li>exploring scenic places and natural wonders</li>
+                            <li>visiting historical highlights and sightseeing</li>
+                            <li>participating in adventure and outdoor activities (adventure travel)</li>
+                        </ul>
+                        <p class="content__text">
+                        Most African safaris are overland trips, which means that they travel between destinations by road. This isn't always the case as fly-in safaris are an option, along with canoeing, hiking, sailing and various other specialist safaris.
+                    </p>
+                        <h4 class="content__title">African Safaris Now - in a Nutshell</h4>
+                    
+                        <p class="content__text">The safari is earning a new reputation, shedding the callous old connotations and maturing into a responsible and benevolent style of travel in Africa. </p>
+                        <p class="content__text">Contemporary safaris have evolved into trips that encompass much more than the unforgettable experience of game viewing and staying in the bush. The 21st-century safari combines wildlife encounters with a variety of fascinating and exciting travel adventures - from city stays and cultural interactions to beach getaways.
+
+                        </p>
+                        <p class="content__text">'Take only photographs, leave only footprints' is an increasingly apt motto for the redefined African safari. </p>
+                </section>
+                
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+<footer>
+<div class="container pb-cmnt-container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                    <textarea placeholder="Write your comment here!" class="pb-cmnt-textarea"></textarea>
+                    <form class="form-inline">
+                       
+                        <button class="btn btn-primary pull-right" type="button">Share</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .pb-cmnt-container {
+        font-family: Lato;
+        margin-top: 100px;
+    }
+
+    .pb-cmnt-textarea {
+     border: 5px solid lightblue;
+        resize: none;
+        padding: 20px;
+        height: 130px;
+        width: 500px;
+       
+    }
+</style>
+</footer>
+</html>

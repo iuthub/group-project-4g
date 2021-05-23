@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>china</title>
+    <link rel="stylesheet" href="style/style.css" href="style/bootstrap.css">
+    <script src="#"></script>
+
+</style>
+ 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container row menu">
+                <a href="" class="menu__logo"><img src="img/4g travel-logos_black.png" alt=""></a>
+                <ul class="menu__list">
+                    <li><a href="index.html" class="menu__link">home</a></li>
+                    <li><a href="photos.html" class="menu__link">photos</a></li>
+                    <li><a href="posts.html" class="menu__link">posts</a></li>
+                    <li><a href="login.html" class="menu__link">login</a></li>
+                    <li><a href="contacts.html" class="menu__link">contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+   
+    </header>
+ <img class="mySlides" src="img/r1.jpg" style="width:100%">
+  <img class="mySlides" src="img/r2.jpg" style="width:100%">
+  <img class="mySlides" src="img/r3.jpg" style="width:100%">
+  <img class="mySlides" src="img/r4.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+ <main>
+        <div class="container">
+           
+            <div class="row content">
+                <section class="content__info">
+                    <h1 class="content__title">ROME TRAVEL GUIDE</h1>
+                    <p class="content__text">Rome, Italian Roma, historic city and capital of Roma provincia (province), of Lazio regione (region), and of the country of Italy. Rome is located in the central portion of the Italian peninsula, on the Tiber River about 15 miles (24 km) inland from the Tyrrhenian Sea. Once the capital of an ancient republic and empire whose armies and polity defined the Western world in antiquity and left seemingly indelible imprints thereafter, the spiritual and physical seat of the Roman Catholic Church, and the site of major pinnacles of artistic and intellectual achievement, Rome is the Eternal City, remaining today a political capital, a religious centre, and a memorial to the creative imagination of the past. </p>
+                    <p class="content__title">Climate </p>
+                    <p class="content__text">Rome’s hot, dry summer days, with high temperatures often above 75 °F (24 °C), are frequently cooled in the afternoons by the ponentino, a west wind that rises from the Tyrrhenian Sea. The city receives roughly 30 inches (750 mm) of precipitation annually; spring and autumn are the rainiest seasons. Frosts and occasional light snowfalls punctuate the otherwise mild winters, when high temperatures average just above 50 °F (10 °C). The tramontana, a cold, dry wind from the north, frequents the city in the winter. </p>
+                   
+                </section>
+                
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+<footer>
+<div class="container pb-cmnt-container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                    <textarea placeholder="Write your comment here!" class="pb-cmnt-textarea"></textarea>
+                    <form class="form-inline">
+                       
+                        <button class="btn btn-primary pull-right" type="button">Share</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .pb-cmnt-container {
+        font-family: Lato;
+        margin-top: 100px;
+    }
+
+    .pb-cmnt-textarea {
+     border: 5px solid lightblue;
+        resize: none;
+        padding: 20px;
+        height: 130px;
+        width: 500px;
+       
+    }
+</style>
+</footer>
+</html>

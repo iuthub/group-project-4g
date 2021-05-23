@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>china</title>
+    <link rel="stylesheet" href="style/style.css" href="style/bootstrap.css">
+    <script src="#"></script>
+
+</style>
+ 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container row menu">
+                <a href="" class="menu__logo"><img src="img/4g travel-logos_black.png" alt=""></a>
+                <ul class="menu__list">
+                    <li><a href="index.html" class="menu__link">home</a></li>
+                    <li><a href="photos.html" class="menu__link">photos</a></li>
+                    <li><a href="posts.html" class="menu__link">posts</a></li>
+                    <li><a href="login.html" class="menu__link">login</a></li>
+                    <li><a href="contacts.html" class="menu__link">contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+   
+    </header>
+ <img class="mySlides" src="img/n1.jpg" style="width:100%">
+  <img class="mySlides" src="img/n2.jpg" style="width:100%">
+  <img class="mySlides" src="img/n3.jpg" style="width:100%">
+  <img class="mySlides" src="img/n4.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+ <main>
+        <div class="container">
+           
+            <div class="row content">
+                <section class="content__info">
+                    <h1 class="content__title">NEW YORK TRAVEL GUIDE</h1>
+                    <h4 class="content__title">Geography</h4>
+                    <p class="content__text">New York City geography is composed of five boroughs.  While Manhattan and Staten Island are islands, Brooklyn and Queens are geographically part of Long Island, and the Bronx is attached to the US mainland. The islands are linked by bridges, tunnels and ferries. Check here for helpful NYC maps and guides. </p>
+                    <p class="content__text">China has three "Golden Week" holidays per year. People get a mandatory two or three days off work for each holiday, and workers' companies can grant them the rest of the week off, making each holiday a total of 7 days. As you can imagine, having almost 1.4 billion people with the same days off can make travelling at these times arduous to say the least.
+                    </p>
+                    <p class="content__text">Travelling during the Spring Festival/Chinese New Year is incredibly difficult. Chinese New Year is China's Christmas, so the millions of migrant workers and students flood back to their home towns. Everybody else takes the opportunity to spend their hong bao (gifts of money traditionally given at CNY) and go travelling. Most of the time, since you are only allowed to purchase train tickets 6 days in advance and must be present in the city of origin, sometimes only standing room tickets are available. Be aware! The Spring Festival is undoubtedly the busiest time for the Chinese transportation system. Flying will avoid the crowded trains, but book early and expect to pay higher prices. All the main tourist attractions will be crawling with tourists (worse than usual), so unless you like crowds, it's best to avoid it altogether.
+                        </p>
+                        <p class="content__text">The Manhattan Island is roughly 13.4 miles long and about 2.3 miles wide at its widest. Except at its northern and southern tips, the borough’s avenues run roughly north and south, and streets run east and west. One-way thoroughfares are common, with traffic moving east on even-numbered streets and west on odd-numbered streets. Fifth Avenue divides the island into east and west sides (for example, locations on 57th Street west of Fifth Avenue are designated “W. 57th St.,” and east of Fifth Avenue, they’re “E. 57th St.”). As you move farther east or west from Fifth Avenue, street addresses increase, usually in increments of 100 from one block to the next. For north-south avenues, 20 blocks equals a mile, and the street numbers increase as you go uptown. Blocks can be a useful measure of distance, but keep in mind your direction: walking uptown from 1st Street to 6th Street is about a quarter of a mile, but walking the same number of blocks crosstown, from First Avenue to Sixth Avenue, is approximately a mile.
+                        </p>
+                        <p class="content__text">The two other national holidays are October 1st, National Day, celebrating the founding of the People's Republic of China and May 1st, which is International Labor Day. Almost all Chinese get the two holidays off and many take the opportunity to travel. If you want to avoid the crowds, fly, but it should get a lot less busy towards the end of the week.
+                        </p>
+                        <p class="content__text">The Harbin International Ice and Snow Sculpture Festival is an annual event officially taking place for a month starting on January 5th each year. It is held in the city of Harbin in the Heilongjiang province. It is one of the world's largest ice and snow festivals, along with Canada's Quebec City Winter Carnival, Japan's Sapporo Snow Festival and Norway's Ski Festival.
+                        </p>
+                        <h4 class="content__title">Climate</h4>
+                    <p class="content__text">
+                        New York City has a humid continental climate, though being adjacent to water it suffers less temperature fluctuation than inland areas. New York winters are typically cold (though not severely so; temperatures below 0°F (-18°C) only occur about once per decade on average). Temperatures in the 10s and 20s (°F) are quite common at the height of winter and New York winters sometimes feature snowstorms that can paralyze the city with over a foot (30 cm) of snow (such as the Blizzard of 1888, which led to the city's telephone and telegraph lines moving underground, and led to the building of the subway). Summers in New York are hot and humid, with temperatures commonly exceeding 90°F (32°C), although high temperatures above 100°F (38°C) are about as rare as subzero (°F) lows in winter. Humidity levels are usually quite high in July and August. Autumns are comfortable in New York and similar to spring in temperature.
+</p>
+                </section>
+                
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+<footer>
+<div class="container pb-cmnt-container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                    <textarea placeholder="Write your comment here!" class="pb-cmnt-textarea"></textarea>
+                    <form class="form-inline">
+                       
+                        <button class="btn btn-primary pull-right" type="button">Share</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .pb-cmnt-container {
+        font-family: Lato;
+        margin-top: 100px;
+    }
+
+    .pb-cmnt-textarea {
+     border: 5px solid lightblue;
+        resize: none;
+        padding: 20px;
+        height: 130px;
+        width: 500px;
+       
+    }
+</style>
+</footer>
+</html>

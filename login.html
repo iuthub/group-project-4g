@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <script src="#"></script>
+    <style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:lightblue;  
+}  
+
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container row menu">
+                <a href="" class="menu__logo"><img src="img/4g travel-logos_black.png" alt=""></a>
+                <ul class="menu__list">
+                    <li><a href="index.html" class="menu__link">home</a></li>
+                    <li><a href="photos.html" class="menu__link">photos</a></li>
+                    <li><a href="posts.html" class="menu__link">posts</a></li>
+                    <li><a href="login.html" class="menu__link">login</a></li>
+                    <li><a href="contacts.html" class="menu__link">contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+   
+ 
+    <div id = "frm">  
+        <h1>Login</h1>  
+        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+            <p>  
+                <label> UserName: </label>  
+                <input type = "text" id ="user" name  = "user" required pattern="([A-z0-9À-ž\s]){5,}" />  
+            </p>  
+            <p>  
+                <label>  Password: </label>  
+                <input type = "password" id ="pass" name  = "pass" required pattern="([A-z0-9]){5,}" />  
+            </p>  
+            <p>     
+        <button type="submit" id="signin" class="registerbtn">Register</button>     
+            </p>  
+        </form>  
+    </div>  
+
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+
+
+     
+
+
+</body>
+</html>
